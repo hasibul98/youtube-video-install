@@ -1,6 +1,6 @@
 চালানোর নিয়ম:
 আগে Flask ইনস্টল করো:
-
+pip install yt-dlp
 pip install flask yt-dlp
 
 তারপর চালাও:
