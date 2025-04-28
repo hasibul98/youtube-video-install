@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube to IDM Downloader</title>
+</head>
+<body>
+    <h1>YouTube Video Direct Link Generator</h1>
+    <form action="/generate" method="POST">
+        <input type="text" name="url" placeholder="Enter YouTube Video URL" size="50" required>
+        <button type="submit">Generate Direct Link</button>
+    </form>
+    
+    {% if video_url %}
+        <h2>Direct Download Link for "{{ video_title }}":</h2>
+        <a href="{{ video_url }}" download="{{ video_title }}.mp4">Click Here to Download via IDM</a>
+    {% endif %}
+</body>
+</html>
